@@ -1,0 +1,39 @@
+{
+  "name": "com.avcapital.app",
+  "displayName": "avcapital",
+  "version": "1.0.0",
+  "description": "App de entrenamiento fisico y registro alimenticio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Innobite S.A.",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^10.1.2",
+    "cordova-browser": "^6.0.0",
+    "cordova-ios": "^6.2.0",
+    "cordova-plugin-inappbrowser": "^5.0.0",
+    "cordova-plugin-vibration": "^3.1.1"
+  },
+  "cordova": {
+    "platforms": [
+      "android",
+      "ios",
+      "browser"
+    ],
+    "plugins": {
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-vibration": {}
+    }
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.10.0",
+    "canvas-confetti": "^1.9.1",
+    "confetti-js": "^0.0.18",
+    "request": "^2.88.2"
+  }
+}

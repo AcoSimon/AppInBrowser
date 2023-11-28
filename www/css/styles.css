@@ -1,0 +1,986 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+  --color-background: #F7F8F8;
+  --color-background-dark: #1D1617;
+  --color--text2: #ADA4A5;
+  --color-text: #333;
+  --color-title: #1D1617;
+  --color-btn-background: linear-gradient(274.42deg, #5CF2E3 0%, #1BCBF2 124.45%);
+  --color-btn-hover: #0FB2F2;
+  --color-btn-shadow: #95ADFE4D;
+  --color-btn-text: #fff;
+  --color-btn: #0FB2F2;
+  --color-titleBlue: #1BCBF2;
+  --color-input: #F7F8F8;
+  --num-radius: 15px;
+  --f7-grid-gap: 16px;
+  --fontLetter: 'Inter', sans-serif;
+  --fontSize: 14px;
+}
+
+.block-title {
+  white-space: initial !important;
+}
+
+*:not(h1):not(h2):not(h3):not(h4):not(h5) {
+  font-family: var(--fontLetter) !important;
+  font-size: var(--fontSize) !important;
+}
+
+.md .messagebar~* .fab[class*="-bottom"],
+.md .messagebar~.fab[class*="-bottom"],
+.md .toolbar-bottom-md~* .fab[class*="-bottom"],
+.md .toolbar-bottom-md~.fab[class*="-bottom"] {
+  margin-bottom: -10px !important;
+}
+
+.ios .toolbar~.fab[class*="-bottom"] {
+  margin-bottom: -10px !important;
+}
+
+.cronometroDisplayCSS {
+  background-image: url(./media/circleCrono.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  font-weight: 800;
+}
+
+.colMenu {
+  background-color: var(--color-background) !important;
+}
+
+.mg-4 {
+  margin: 8px;
+}
+
+.demo-facebook-card .card-header {
+  display: block;
+  padding: 10px;
+}
+
+.demo-facebook-card .demo-facebook-avatar {
+  float: left;
+}
+
+.demo-facebook-card .demo-facebook-name {
+  margin-left: 44px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.demo-facebook-card .demo-facebook-date {
+  margin-left: 44px;
+  font-size: 13px;
+  color: var(--color--text2);
+}
+
+.demo-facebook-card .card-footer {
+  background: var(--color-background);
+}
+
+.popup{
+  border-radius: 18px;
+}
+
+.demo-facebook-card .card-footer a {
+  color: var(--color--text2);
+  font-weight: 500;
+}
+
+.demo-facebook-card .card-content img {
+  display: block;
+}
+
+.demo-facebook-card .card-content-padding {
+  padding: 15px 10px;
+}
+
+.demo-facebook-card .card-content-padding .likes {
+  color: var(--color--text2);
+}
+
+.md .button.button-active,
+.md .button.button-fill,
+.md .button.button-fill-md,
+.md .button.tab-link-active {
+  background: var(--color-btn-background) !important;
+}
+
+.rutine-title {
+  color: var(--color-btn-text) !important;
+}
+
+.itemRepEjercicio {
+  font-weight: 600;
+}
+
+.card-banner {
+  min-height: 8.5rem !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background);
+}
+
+a {
+  text-decoration: none;
+}
+
+b {
+  text-decoration: none;
+  color: var(--color-btn-text);
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.titleAct {
+  color: var(--color-btn-text) !important;
+}
+
+input {
+  background: var(--color-input) !important;
+  color: var(--color-text);
+  border-radius: var(--num-radius) !important;
+  padding: 1rem !important;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.back {
+  padding-left: 3%;
+}
+
+.pie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.nombreApellido_menu {
+  text-transform: capitalize;
+}
+
+.list ul {
+  height: auto !important;
+}
+
+.textDegrade {
+  color: var(--color-titleBlue);
+}
+
+.titulo {
+  font-size: 2.5em;
+  margin: 0;
+  margin-top: 1em;
+  color: var(--color-text);
+}
+
+.titulo-recetas {
+  font-size: 1.5em;
+  margin: 0;
+  margin-top: 1em;
+  color: var(--color-text);
+}
+
+.textoResaltado {
+  color: var(--color-btn-hover) !important;
+}
+
+.textoResaltadoAlternativo {
+  color: var(--color-titleBlue) !important;
+}
+
+.textoResaltadoBlanco {
+  color: var(--color-input) !important;
+}
+
+
+.iconTxt {
+  color: var(--color-titleBlue) !important;
+  font-size: 1.75rem;
+}
+
+.md .navbar {
+  background: var(--color-background);
+}
+
+.btn-primary {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  border: none;
+  text-decoration: none;
+  background: var(--color-btn-background);
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 10px 22px 0px var(--color-btn-shadow);
+  color: var(--color-btn-text) !important;
+}
+
+.btn-border {
+  filter: drop-shadow(0px 10px 22px rgba(149, 173, 254, 0.3));
+  border-radius: 99px 99px 0px 0px;
+  font-weight: bold !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-btn-hover);
+}
+
+.md .bg-color-blue {
+  background-color: var(--color-btn) !important;
+}
+
+.input-Style {
+  background: var(--color-input) !important;
+  color: var(--color-text);
+  border-radius: var(--num-radius) !important;
+}
+
+.md .chip-media+.chip-label {
+  font-weight: 600;
+}
+
+#gender {
+  padding-left: 5%;
+}
+
+.centerContain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.centerContainVertical {
+  display: flex;
+  align-items: center;
+}
+
+.centerContainHorizontal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.md-2 {
+  margin: 12px;
+}
+
+.md-5 {
+  margin: 2%;
+}
+
+.pd-3 {
+  padding: 3%;
+}
+
+/*==========================={Menu}*/
+.mainBtn {
+  height: 8vh !important;
+}
+
+.tab-up {
+  transform: translateY(-7%);
+}
+
+.mainBtn .tab-link {
+  position: relative;
+}
+
+.mainBtn .tab-link.tab-up img {
+  position: relative;
+  z-index: 1;
+  transform: translateY(-6%);
+}
+
+.mainBtn .tab-link:not(.tab-up) img {
+  position: relative;
+  z-index: 0;
+}
+
+.fab-contain {
+  background-size: contain;
+  background-position: center center;
+}
+
+.md .messagebar~* .fab[class*="-bottom"],
+.md .messagebar~.fab[class*="-bottom"],
+.md .toolbar-bottom-md~* .fab[class*="-bottom"],
+.md .toolbar-bottom-md~.fab[class*="-bottom"] {
+  margin-bottom: 0px;
+}
+
+.tab-menu {
+  margin: 0% 10px;
+}
+
+.tab-data {
+  margin-bottom: 28px !important;
+  border-radius: 22px;
+  display: flex;
+  text-align: center;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background: var(--color-btn) !important;
+  color: var(--color-btn-text);
+}
+
+.tab-box {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 28px !important;
+  border-radius: 22px;
+  min-height: 200px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.centerItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-search {
+  padding-left: 5%;
+}
+
+.boxProfile {
+  box-shadow: 0px 10px 15px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  min-height: 96px;
+}
+
+.imgProfile {
+  max-height: 90px !important;
+}
+
+.b-black {
+  color: var(--color-title) !important;
+}
+
+.btn-tab {
+  width: 100%;
+}
+
+.subLine {
+  max-width: 10%;
+  color: var(--color-background);
+}
+
+.item-subtitle {
+  color: var(--color--text2) !important;
+}
+
+.timeline-item-date small {
+  font-weight: bold;
+}
+
+/*
+dataUser:
+*/
+
+.recDataUser {
+  color: var(--color-btn-text);
+  border-radius: 20px;
+  margin: 3% auto;
+  padding: 4%;
+  min-height: 20vh !important;
+  box-shadow: 0px 10px 22px 0px var(--color-btn-shadow);
+}
+
+.btn-dataUser {
+  width: 100%;
+}
+
+.dataUserF {
+  padding: 10% 0;
+}
+
+/*
+objetivos:
+*/
+
+.cardObj {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+/*
+detalleAlimento
+*/
+.page-content.backgroundImg {
+  background-image: url('../media/pantalla.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.portada {
+  height: 33vh;
+}
+
+.chipMod {
+  padding: 0 12px;
+}
+
+.seccion-contenido {
+  padding: 30px;
+  min-height: -webkit-fill-available;
+  background-color: var(--color-background);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.pdp-3 {
+  padding: 0px 30px 30px 0px;
+}
+
+/* Historial liquido */
+
+.timeline-item-divider {
+  background: var(--color-background);
+}
+
+.md .timeline-item-inner {
+  border-radius: 4px !important;
+
+}
+
+/* Recetas */
+
+.chipRecetas {
+  background: var(--color-btn-shadow) !important;
+  font-weight: bold !important;
+}
+
+.detalleRecetaTitleSub {
+  font-weight: bold !important;
+}
+
+.chips_hoy {
+  margin: 14px 0px;
+  gap: 9px;
+}
+
+/* Detalle receta */
+.portada {
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+
+/*-----------------------------------------------*/
+/* Estilo para el cronómetro */
+.cronometro {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Estilo para el contenedor del gauge */
+.gauge-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+/*----------------------------------------------*/
+/* Estilo para runtina lista */
+.titulo-rutina {
+  font-weight: bolder !important;
+}
+
+.portEjer {
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: space repeat !important;
+}
+
+.portadaPayPal {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--color-background)), url(../media/imgPayPalPortada.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat !important;
+}
+
+.seccion-contenidoPayPal {
+  padding: 30px;
+  min-height: -webkit-fill-available;
+  background-color: var(--color-background);
+}
+
+.refresh {
+  background-color: var(--color-btn);
+  padding: 4px;
+  border-radius: 8px;
+  color: var(--color-background) !important;
+}
+
+.block-title-alternative {
+  color: var(--color-background) !important;
+}
+
+/* Nivel de actividad */
+.nivelActividadTxt {
+  color: var(--color-btn-text) !important;
+}
+
+.nivelActividadImg_mantener {
+  position: relative;
+  /* Asegura que el contenedor tenga posición relativa */
+  background-size: cover;
+  min-height: 20vh !important;
+}
+
+.nivelActividadImg_mantener::before {
+  min-height: 20vh !important;
+  border-radius: 20px !important;
+  box-shadow: 0px 10px 22px 0px var(--color-btn-shadow) !important;
+  content: "";
+  /* Agrega contenido al pseudo-elemento */
+  position: absolute;
+  /* Posición absoluta en relación al contenedor */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../media/imgPayPalPortada.jpg);
+  background-size: cover;
+  -webkit-filter: blur(0px) brightness(43%) contrast(116%) grayscale(26%);
+  filter: blur(0px) brightness(43%) contrast(116%) grayscale(26%);
+  z-index: -1;
+  /* Coloca el pseudo-elemento detrás del contenido real */
+}
+
+.nivelActividadImg_ganarMusculo {
+  position: relative;
+  /* Asegura que el contenedor tenga posición relativa */
+  background-size: cover;
+  min-height: 20vh !important;
+}
+
+.nivelActividadImg_ganarMusculo::before {
+  min-height: 20vh !important;
+  border-radius: 20px !important;
+  box-shadow: 0px 10px 22px 0px var(--color-btn-shadow) !important;
+  content: "";
+  /* Agrega contenido al pseudo-elemento */
+  position: absolute;
+  /* Posición absoluta en relación al contenedor */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../media/muscleGirl.jpg);
+  background-size: cover;
+  -webkit-filter: blur(0px) brightness(43%) contrast(116%) grayscale(26%);
+  filter: blur(0px) brightness(43%) contrast(116%) grayscale(26%);
+  z-index: -1;
+  /* Coloca el pseudo-elemento detrás del contenido real */
+}
+
+.nivelActividadImg_mujer {
+  position: relative;
+  /* Asegura que el contenedor tenga posición relativa */
+  background-size: cover;
+  min-height: 40vh !important;
+}
+
+.nivelActividadImg_mujer::before {
+  min-height: 40vh !important;
+  border-radius: 20px !important;
+  box-shadow: 0px 10px 22px 0px var(--color-btn-shadow) !important;
+  content: "";
+  /* Agrega contenido al pseudo-elemento */
+  position: absolute;
+  /* Posición absoluta en relación al contenedor */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../media/imgMujer.jpg);
+  background-size: cover;
+  -webkit-filter: blur(0px) brightness(43%) contrast(116%) grayscale(26%);
+  filter: blur(0px) brightness(43%) contrast(116%) grayscale(26%);
+  z-index: -1;
+  /* Coloca el pseudo-elemento detrás del contenido real */
+}
+
+.nivelActividadImg_hombre {
+  position: relative;
+  /* Asegura que el contenedor tenga posición relativa */
+  background-size: cover;
+  min-height: 40vh !important;
+}
+
+.nivelActividadImg_hombre::before {
+  min-height: 40vh !important;
+  border-radius: 20px !important;
+  box-shadow: 0px 10px 22px 0px var(--color-btn-shadow) !important;
+  content: "";
+  /* Agrega contenido al pseudo-elemento */
+  position: absolute;
+  /* Posición absoluta en relación al contenedor */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../media/imgHombre.jpg);
+  background-size: cover;
+  -webkit-filter: blur(0px) brightness(43%) contrast(116%) grayscale(26%);
+  filter: blur(0px) brightness(43%) contrast(116%) grayscale(26%);
+  z-index: -1;
+  /* Coloca el pseudo-elemento detrás del contenido real */
+}
+
+.nivelActividadImg_perderGrasa {
+  position: relative;
+  /* Asegura que el contenedor tenga posición relativa */
+  background-size: cover;
+  min-height: 20vh !important;
+}
+
+.nivelActividadImg_perderGrasa::before {
+  min-height: 20vh !important;
+  border-radius: 20px !important;
+  box-shadow: 0px 10px 22px 0px var(--color-btn-shadow) !important;
+  content: "";
+  /* Agrega contenido al pseudo-elemento */
+  position: absolute;
+  /* Posición absoluta en relación al contenedor */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../media/imgPerder.jpg);
+  background-size: cover;
+  -webkit-filter: blur(0px) brightness(43%) contrast(116%) grayscale(26%);
+  filter: blur(0px) brightness(43%) contrast(116%) grayscale(26%);
+  z-index: -1;
+  /* Coloca el pseudo-elemento detrás del contenido real */
+}
+
+.nivelActividadImg_muyActivo {
+  position: relative;
+  /* Asegura que el contenedor tenga posición relativa */
+  background-size: cover;
+  min-height: 20vh !important;
+}
+
+.nivelActividadImg_muyActivo::before {
+  min-height: 20vh !important;
+  border-radius: 20px !important;
+  box-shadow: 0px 10px 22px 0px var(--color-btn-shadow) !important;
+  content: "";
+  /* Agrega contenido al pseudo-elemento */
+  position: absolute;
+  /* Posición absoluta en relación al contenedor */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../media/nivelactividad_muyactivo.jpg);
+  background-size: cover;
+  -webkit-filter: blur(0px) brightness(43%) contrast(116%) grayscale(26%);
+  filter: blur(0px) brightness(43%) contrast(116%) grayscale(26%);
+  z-index: -1;
+  /* Coloca el pseudo-elemento detrás del contenido real */
+}
+
+.nivelActividadImg_activo {
+  position: relative;
+  /* Asegura que el contenedor tenga posición relativa */
+  background-size: cover;
+  min-height: 20vh !important;
+}
+
+.nivelActividadImg_activo::before {
+  min-height: 20vh !important;
+  border-radius: 20px !important;
+  box-shadow: 0px 10px 22px 0px var(--color-btn-shadow) !important;
+  content: "";
+  /* Agrega contenido al pseudo-elemento */
+  position: absolute;
+  /* Posición absoluta en relación al contenedor */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../media/nivelactividad_activo.jpg);
+  background-size: cover;
+  -webkit-filter: blur(0px) brightness(43%) contrast(116%) grayscale(26%);
+  filter: blur(0px) brightness(43%) contrast(116%) grayscale(26%);
+  z-index: -1;
+  /* Coloca el pseudo-elemento detrás del contenido real */
+}
+
+.nivelActividadImg_moderado {
+  position: relative;
+  /* Asegura que el contenedor tenga posición relativa */
+  background-size: cover;
+  min-height: 20vh !important;
+}
+
+.nivelActividadImg_moderado::before {
+  min-height: 20vh !important;
+  border-radius: 20px !important;
+  box-shadow: 0px 10px 22px 0px var(--color-btn-shadow) !important;
+  content: "";
+  /* Agrega contenido al pseudo-elemento */
+  position: absolute;
+  /* Posición absoluta en relación al contenedor */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../media/nivelactividad_moderado.jpg);
+  background-size: cover;
+  -webkit-filter: blur(0px) brightness(43%) contrast(116%) grayscale(26%);
+  filter: blur(0px) brightness(43%) contrast(116%) grayscale(26%);
+  z-index: -1;
+  /* Coloca el pseudo-elemento detrás del contenido real */
+}
+
+.nivelActividadImg_ligero {
+  position: relative;
+  /* Asegura que el contenedor tenga posición relativa */
+  background-size: cover;
+  min-height: 20vh !important;
+}
+
+.nivelActividadImg_ligero::before {
+  min-height: 20vh !important;
+  border-radius: 20px !important;
+  box-shadow: 0px 10px 22px 0px var(--color-btn-shadow) !important;
+  content: "";
+  /* Agrega contenido al pseudo-elemento */
+  position: absolute;
+  /* Posición absoluta en relación al contenedor */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../media/nivelactividad_ligero.jpg);
+  background-size: cover;
+  -webkit-filter: blur(0px) brightness(43%) contrast(116%) grayscale(26%);
+  filter: blur(0px) brightness(43%) contrast(116%) grayscale(26%);
+  z-index: -1;
+  /* Coloca el pseudo-elemento detrás del contenido real */
+}
+
+.nivelActividadImg_sedentario {
+  position: relative;
+  /* Asegura que el contenedor tenga posición relativa */
+  background-size: cover;
+  min-height: 20vh !important;
+}
+
+.nivelActividadImg_sedentario::before {
+  min-height: 20vh !important;
+  border-radius: 20px !important;
+  box-shadow: 0px 10px 22px 0px var(--color-btn-shadow) !important;
+  content: "";
+  /* Agrega contenido al pseudo-elemento */
+  position: absolute;
+  /* Posición absoluta en relación al contenedor */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../media/nivelactividad_sedentario.jpg);
+  background-size: cover;
+  -webkit-filter: blur(0px) brightness(43%) contrast(116%) grayscale(26%);
+  filter: blur(0px) brightness(43%) contrast(116%) grayscale(26%);
+  z-index: -1;
+  /* Coloca el pseudo-elemento detrás del contenido real */
+}
+
+/*========================================================================================*/
+/* Clases para los background: */
+.tab_menu_ejercicio {
+  position: relative;
+  /* Asegura que el contenedor tenga posición relativa */
+}
+
+.tab_menu_ejercicio::before {
+  content: "";
+  /* Agrega contenido al pseudo-elemento */
+  position: absolute;
+  /* Posición absoluta en relación al contenedor */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../media/menu_ejercicios.jpg);
+  background-size: cover;
+  -webkit-filter: blur(3px) brightness(43%) contrast(116%) grayscale(26%);
+  filter: blur(3px) brightness(43%) contrast(116%) grayscale(26%);
+  z-index: -1;
+  /* Coloca el pseudo-elemento detrás del contenido real */
+}
+
+/* background menu/comida*/
+.tab_menu_comida {
+  position: relative;
+  /* Asegura que el contenedor tenga posición relativa */
+  background-size: cover;
+}
+
+.tab_menu_comida::before {
+  content: "";
+  /* Agrega contenido al pseudo-elemento */
+  position: absolute;
+  /* Posición absoluta en relación al contenedor */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../media/menu_comida.jpg);
+  background-size: cover;
+  -webkit-filter: blur(3px) brightness(43%) contrast(116%) grayscale(26%);
+  filter: blur(3px) brightness(43%) contrast(116%) grayscale(26%);
+  z-index: -1;
+  /* Coloca el pseudo-elemento detrás del contenido real */
+}
+
+/* background menu/comida*/
+.tab_menu_bienvenido {
+  position: relative;
+  /* Asegura que el contenedor tenga posición relativa */
+  background-size: cover;
+}
+
+.tab_menu_bienvenido::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../media/menu_bienvenido.jpg);
+  background-size: cover;
+  -webkit-filter: blur(3px) brightness(43%) contrast(116%) grayscale(26%);
+  filter: blur(0px) brightness(70%) contrast(116%) grayscale(20%);
+  z-index: -1;
+}
+
+
+
+/* background menu/comida*/
+.tab_menu_perfil {
+  position: relative;
+  /* Asegura que el contenedor tenga posición relativa */
+  background-size: cover;
+}
+
+.tab_menu_perfil::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../media/menu_perfil.jpg);
+  background-size: cover;
+  -webkit-filter: blur(3px) brightness(43%) contrast(116%) grayscale(26%);
+  filter: blur(0px) brightness(70%) contrast(116%) grayscale(20%);
+  z-index: -1;
+}
+
+/* background menu/comida*/
+.backgroundHidratacion {
+  position: relative;
+  background-size: cover;
+}
+
+.backgroundHidratacion::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../media/imgWater.jpg);
+  background-size: cover;
+  /* -webkit-filter: blur(3px) brightness(43%) contrast(116%) grayscale(26%);*/
+  /*filter: blur(0px) brightness(70%) contrast(116%) grayscale(20%);*/
+  z-index: -1;
+}
+
+
+/*========================================================================================*/
+.li-group-title {
+  background: var(--color-btn-background) !important;
+  border-radius: 4px 4px auto auto !important;
+}
+
+.textoDegrade {
+  color: var(--color-titleBlue);
+}
+
+.backgroundWhite {
+  background-color: var(--color-background);
+}
+
+.ulMenu {
+  border-radius: 4px 4px 0px 0px !important;
+}
+
+.ulMenuEND {
+  border-radius: 0px 0px 4px 4px !important;
+}
+
+
+.aguita-toast {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+}
+
+
+.aguita {
+  position: absolute;
+  bottom: 0; /* Cambiamos "right" por "bottom" */
+  right: 0; /* Alineamos horizontalmente con respecto al centro */
+  z-index: 1;
+}
+
+/* Media query para pantallas más grandes, por ejemplo, cuando la pantalla tiene un ancho mínimo de 768px */
+@media screen and (min-width: 1024px) {
+  .aguita {
+    right: -57px; /* Cambiamos el valor de "right" para pantallas más grandes */
+  }
+}
+
+
+
+
+
+
+

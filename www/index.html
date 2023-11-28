@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- Required meta tags-->
+      <meta charset="utf-8">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+      <!-- Color theme for statusbar -->
+      <meta name="theme-color" content="#ff5901">
+      <!-- Your app title -->
+      <title>AVcapital</title>
+      <!-- Path to Supabase -->
+      <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.18.0"></script>
+      <!-- Path to Framework7 Library CSS -->
+      <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.framework7.io/css/framework7-icons.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <!-- Path to your custom app styles-->
+      <link rel="stylesheet" href="css/styles.css">    
+  </head>
+  
+  <body>
+  
+      <div id="app">
+        <!-- Statusbar overlay -->
+        <span class="progressbar-infinite" id="progress"></span>
+        <div class="statusbar"></div>
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="index" class="page">
+              
+
+
+        </div>
+      </div>
+    
+      <!-- Apache Cordova: (1 EVER)-->
+      <script type="text/javascript" src="cordova.js"></script>
+      <!-- Framework7 -->
+      <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+      <!-- AOScss -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- Cordova -->
+      <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
