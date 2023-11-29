@@ -121,6 +121,6 @@ $$(document).on('page:init', '.page[data-name="index"]', function (e) {
   innobite('https://avcapital.com.ar/');
   let currentPage = $$('.page-current')[0].f7Page;
   if (currentPage && currentPage.route && currentPage.route.path === '/index/') {
-    innobite('https://avcapital.com.ar/');
+    innobite('https://avcapital.com.ar/app');
   }
 });
